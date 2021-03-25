@@ -9,15 +9,15 @@
 	<h1>Home Page</h1>
 	
 	<div id="unauthenticated" style="display: none">
-		Sign in with GitHub: 
+		Sign in with GitHub: <a href="/oauth2/authorization/github">click here</a>
 	</div>
-	<a href="/oauth2/authorization/github">click here</a>
+	
 	
 	<div id="authenticated" style="display: none">
 		Hello <span id="user"></span>!
-		
+		<button onClick="logout()">Logout</button>
 	</div>	
-	<button onClick="logout()">Logout</button>
+	
 	
 	<script>
 		async function checkLoggedIn() {
